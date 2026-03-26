@@ -1,0 +1,20 @@
+# OpenCode settings repo - track config, agents, commands
+# Ignore dependencies and local artifacts
+
+# Node dependencies
+node_modules/
+package.json
+package-lock.json
+bun.lock
+
+# Backup files
+*.bak.*
+*.backup
+
+# Logs
+*.log
+log/
+
+# Temporary files
+*.tmp
+.DS_Store
