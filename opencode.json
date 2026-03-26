@@ -2,6 +2,46 @@
   "$schema": "https://opencode.ai/config.json",
   "theme": "system",
   "autoupdate": false,
+  "provider": {
+    "amazon-bedrock": {
+      "options": {
+        "region": "eu-central-1",
+        "profile": "labs-build-developers-tooling-claude-code"
+      }
+    },
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen3.5:9b": {
+          "name": "Qwen 3.5 9B (local)"
+        },
+        "falcon3:7b": {
+          "name": "Falcon 3 7B (local)"
+        },
+        "translategemma:12b": {
+          "name": "TranslateGemma 12B (local)"
+        },
+        "translategemma:4b": {
+          "name": "TranslateGemma 4B (local)"
+        },
+        "qwen3.5:2b": {
+          "name": "Qwen 3.5 2B (local)"
+        },
+        "llama3.2:1b": {
+          "name": "Llama 3.2 1B (local)"
+        },
+        "lfm2.5-thinking:1.2b": {
+          "name": "LFM 2.5 Thinking 1.2B (local)"
+        }
+      }
+    }
+  },
+  "model": "amazon-bedrock/global.anthropic.claude-opus-4-6-v1",
+  "small_model": "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0",
   "permission": {
     "bash": {
       "*": "ask",
